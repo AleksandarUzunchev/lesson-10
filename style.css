@@ -337,6 +337,9 @@
         justify-content: center;
     }
 
+    .block-all-features-item-content{
+        flex: 0 1 100%;
+    }
 
     @media (max-width: 578px) {
         .block-all-features-title {
@@ -347,10 +350,104 @@
             font-size: 16px;
             padding-bottom: 60px;
         }
-        .block-all-features-section {
-
-
-
-        }
     }
   /* Block all features end */
+
+    /* footer */
+    .site-footer {
+        background-color: #F9FAFC;
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+
+    .site-footer-head {
+        display: flex;
+        gap: 55px;
+        justify-content: space-between;
+    }
+
+    .site-footer-links {
+        flex: 0 1 190px;
+    }
+
+    .site-footer-title {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .site-footer-list {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .site-footer-menu a,
+    .site-footer-list a {
+        font-size: 14px;
+        line-height: 250%;
+        color: #02073E;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .site-footer-foot {
+        margin-top: 50px;
+        padding-top: 35px;
+        border-top: 1px solid #D9E0E7;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .site-footer-menu {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin-left: auto;
+    }
+
+    .site-footer-copyright {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    @media (max-width: 991px) {
+        .site-footer-head {
+            flex-wrap: wrap;         
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .site-footer {
+            padding-bottom: 80px;
+        }
+
+        .site-footer-head {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .site-footer-links {
+            flex: 0 1 100%;
+        }
+
+        .site-footer-foot {
+            padding-top: 30px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .site-footer-menu {
+            flex-direction: column;
+            gap: 0;
+            margin-left: 0;
+            width: 100%;
+            order: -1;
+        } 
+    }
+        /* footer end */
